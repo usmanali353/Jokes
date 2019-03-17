@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff212121"
+    tools:context="usmanali.jokes.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h1"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        />
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:id="@+id/linearLayout"
+        android:background="#ff000000"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_weight="1.0">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/idBack"
+            android:padding="5.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backarrow"
+            android:text="Back"
+            android:onClick="previous_image"
+            android:layout_weight="1.0"
+            android:layout_below="@+id/textView"
+            android:rotation="180.0" />
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iddownload"
+            android:padding="5.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download"
+            android:text="Save"
+            android:layout_weight="1.0"
+            android:scaleX="1.0"
+            android:onClick="save_image"
+            android:scaleY="1.0" />
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/idshare"
+            android:padding="5.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share"
+            android:text="Save"
+            android:layout_weight="1.0"
+            android:onClick="share_image" />
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/idNext"
+            android:padding="5.0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backarrow"
+            android:text="Next"
+            android:onClick="next_image"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+</RelativeLayout>
